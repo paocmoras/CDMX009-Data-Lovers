@@ -1,6 +1,6 @@
 import { pakiman } from './data.js';
-
-const pak = require('./data')
-
-pak.pakiman;
+function mostrar(pakiman) {
+    pakiman();
+    alert('enlazado')
+}
 
