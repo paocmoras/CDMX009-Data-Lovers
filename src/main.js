@@ -1,5 +1,4 @@
-import {pakiman}  from './data';
-
+import { pakiman } from './data.js';
 
 
 console.log(pakiman())
