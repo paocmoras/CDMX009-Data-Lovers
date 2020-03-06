@@ -1,4 +1,5 @@
 import { pakiman } from './data.js';
 
-
-console.log(pakiman())
+function mostrar() {
+    addEventListener('load', pakiman);
+}

@@ -5,16 +5,10 @@ export function pakiman () {
    list.map(p=>console.log(p.name))
     let agua = list.filter(w=>w.type.includes('Water'))
     console.log(agua)
-    let cont = document.querySelector('#root');
-   
-    agua.map(pok=>{
-        let p = document.createElement('p')
-        p.classList.add('card')
-        p.innerHTML = `
-        <img src=${pok.img}/>
-        <p>${pok.name}</p>`
-        cont.appendChild(p)
-    })
+ 
+    let w = list.filter(p=>p.weaknesses.includes("Fairy"))
+    let fire = w;
+    document.getElementById('root').innerHTML= fire;
         
 
 }
