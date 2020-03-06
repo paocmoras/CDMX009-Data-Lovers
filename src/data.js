@@ -8,7 +8,8 @@ export function pakiman () {
  
     let w = list.filter(p=>p.weaknesses.includes("Fairy"))
     let fire = w;
-    document.getElementById('root').innerHTML= fire;
+   let div = document.getElementById('root');
+   div.innerHTML = fire;
         
 
 }

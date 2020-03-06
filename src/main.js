@@ -1,5 +1,6 @@
 import { pakiman } from './data.js';
 
-function mostrar() {
-    addEventListener('load', pakiman);
-}
+const pak = require('./data')
+
+pak.pakiman;
+
