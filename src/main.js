@@ -1,5 +1,8 @@
 import { pakiman } from './data.js';
-function mostrar(pakiman) {
+
+let c = document.getElementById('root');
+let a = c.addEventListener('onload', mostrar)
+function mostrar() {
     pakiman();
     alert('enlazado')
 }
