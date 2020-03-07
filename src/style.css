@@ -11,6 +11,39 @@ body{
    -o-background-size: cover !important;
 }
 
+/*******************Loader*************************/
+#preloader{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #fff;
+  z-index: 999;
+  align-content: center;
+}
+
+#loader{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: url("img/loader.gif") no-repeat center;
+  background-size: 30%;
+  left: 0;
+  right: 0;
+  top: center;
+}
+
+#loader p{
+  text-align: center;
+  font-size: 30px;
+  font-family: Pokemon;
+  -webkit-text-fill-color: #fde007;
+  -webkit-text-stroke: 2px;
+  -webkit-text-stroke-color: #4358b1;
+  text-shadow: 7px 5px 5px #110033;
+}
+
 /*******************Slider*************************/
 .slider{
   width: 100%;
@@ -89,8 +122,7 @@ body{
   background: #175E95;
   color: #fff;
   font-family: Sitka;
-  font-weight: bold;
-  font-style: italic;
+
 }
 
 .sidebar ul{
@@ -98,8 +130,7 @@ body{
   padding: 0;
   margin: 0;
   font-family: Sitka;
-  font-weight: bold;
-  font-style: italic;
+
 }
 
 .sidebar li{
@@ -139,7 +170,7 @@ body{
 
 .contenido h1{
   text-align: center;
-  font-size: 3rem;
+  font-size: 45px;
   font-family: Pokemon;
   margin: -50px;
   padding: 0;
@@ -157,7 +188,7 @@ body{
   transform: translateX(170px);
 }
 
-/********************Buscador**********************/
+/********************Search************************/
 .box{
   position: absolute;
   margin: 0px;
@@ -170,17 +201,17 @@ body{
 input.src{
   padding: 5px 5px 5px 32px;
   outline: none;
-  font-size: 13px;
+  font-size: 12px;
   border-radius: 15px;
   color: #444;
   border: 3px solid #175E95;
   background: #175E95 url("img/Lupa.png") no-repeat 9px center;
-  width: 40px;/*tamaño del placeholder antes de la animacion*/
+  width: 45px;/*tamaño del placeholder antes de la animacion*/
   transition: all .5s;
 }
 
 input.src:hover{
-  width: 180px;/*tamaño del placeholder despues de la animacion*/
+  width: 195px;/*tamaño del placeholder despues de la animacion*/
   background-color: #0f002d;
   border-color: #0f002d;
   box-shadow: 0 0 5px #6dcff680;
@@ -188,6 +219,7 @@ input.src:hover{
 
 input::placeholder{
   color: #fff;
+  font-family: Sitka;
 }
 
 /******************Titulo Pokemon*****************/
@@ -196,7 +228,9 @@ input::placeholder{
   src: url(img/Pokemon.ttf);
 }
 
+/**************Fuente del demas texto*****************/
+
 @font-face {
-    font-family: Sitka Display;
-    src: url(img/Sitka.ttf);
+    font-family: Sitka;
+    src: url(img/Sitka.ttc);
 }

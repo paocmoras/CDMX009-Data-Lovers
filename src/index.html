@@ -11,6 +11,15 @@
     crossorigin="anonymous"></script>
   </head>
   <body>
+
+    <!--El Loader se activara hasta que se entregue el proyecto-->
+    <!--Loader
+        <div id= "preloader">
+          <div id= "loader">
+          <p>Busca Datos De tus Pokémones Favoritos</p></div>
+        </div>-->
+
+
     <!--imagenes deslizables------------------------------------->
         <div class="slider">
               <ul>
@@ -26,20 +35,6 @@
                 <li><img src="img/slider10.jpg" alt=""></li>
               </ul>
           </div>
-
-          <!--Buscador---------------------------------------------->
-          <!--<nav>
-            <div class= "container">
-              <button onclick="slide()"></button>
-            </div>
-          </nav>
-
-          <div class="search hide">
-            <div class="container">
-              <input type="text" placeholder='Ejemplo: "Charmander"'><button id="Buscar">Buscar</button></div>
-            </div>-->
-
-
 
       <!--Menu-------------------------------------------------->
       <main>
@@ -68,23 +63,26 @@
         </main>
 
 
-      <!--Contenido pag 1------------------------------------------->
+      <!--Contenido General------------------------------------------->
 
 
           <div class="contenido">
+
+      <!--Search------------------------------------->
             <div class="box">
 
               <input type="text" name="search" placeholder="Buscar Ejemplo: 'Charmander'" class="src" autocomplete="off">
 
             </div>
             <img src="img/menu-icono.png" alt="" class="menu-bar">
+    <!--Contenido pag 1-------------------------------------------->
             <h1>Bienvenido Maestro PoKéMoN</h1>
+            <div id="root"></div>
           </div>
 
       <!--Contenido pag 2-------------------------------------------->
 
 
-    <div id="root"></div>
-    <script type="module" src="./main.js"></script>
+    <script type="module" src="main.js"></script>
   </body>
 </html>
