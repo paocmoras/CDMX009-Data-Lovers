@@ -1,8 +1,8 @@
 //-------------------------------Loader-----------------------------------------
 
-window.onload=function(){
-  $("#preloader").fadeOut(5000);
-}
+//window.onload=function(){
+  //$("#preloader").fadeOut(5000);
+//}
 
 //--------------------------------Menu------------------------------------------
 
@@ -18,7 +18,11 @@ import { pakiman } from './data.js';
 let btn = document.querySelector('#fire')
 btn.addEventListener('click', mostrar)
  function mostrar() {
- document.getElementById('slider').style.display = 'none';
- document.getElementById('root2').style.display = 'block';
- pakiman();
+pakiman()
  }
+
+ 
+
+
+window.mostrar =mostrar;
+ 
