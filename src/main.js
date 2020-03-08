@@ -1,8 +1,8 @@
 //-------------------------------Loader-----------------------------------------
 
-//window.onload=function(){
-  //$("#preloader").fadeOut(5000);
-//}
+window.onload=function(){
+  $("#preloader").fadeOut(5000);
+}
 
 //--------------------------------Menu------------------------------------------
 
@@ -13,16 +13,19 @@ $(".menu-bar").on("click", function(){
 
 //-----------------------------Pakiman------------------------------------------
 
+
 import { pakiman } from './data.js';
 
-let btn = document.querySelector('#fire')
+let btn = document.querySelector('#water')
 btn.addEventListener('click', mostrar)
- function mostrar() {
-pakiman()
+ function mostrar(callback) {
+  callback(pakiman)
  }
+
+
 
  
 
 
-window.mostrar =mostrar;
+
  

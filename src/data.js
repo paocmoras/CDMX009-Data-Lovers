@@ -14,9 +14,12 @@ export function pakiman () {
     agua.map(w =>{
        let d = document.createElement('d')
        d.classList.add("card")
-       d.innerHTML = `<img src${w.img}/>
-       <p>${w.name}
-       <p>${w.weaknesses}</p> `
+       d.innerHTML = ` <img src=${w.img} />
+       <p>${w.id}</p>
+       <p>${w.name}</p>
+       <p>${w.weaknesses}</p> 
+       <p>${w.type}</p>
+       `
        div.appendChild(d)
     })
 //lista filtrada de pokemones fire
