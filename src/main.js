@@ -16,8 +16,8 @@ $(".menu-bar").on("click", function(){
 
 import { pakiman } from './data.js';
 
-console.log(pakiman());
-addEventListener('load', mostrar)
+let btn = document.querySelector('#fire')
+btn.addEventListener('click', mostrar)
  function mostrar() {
-   pakiman();
+ pakiman();
  }

@@ -10,9 +10,18 @@ export function pakiman () {
    list.map(p=>console.log(p.name))
     let agua = list.filter(w=>w.type.includes('Water'))
     console.log(agua)
+    let div = document.querySelector('#root')
+    agua.map(w =>{
+       let d = document.createElement('d')
+       d.classList.add("card")
+       d.innerHTML = `<img src${w.img}/>
+       <p>${w.name}
+       <p>${w.weaknesses}</p> `
+       div.appendChild(d)
+    })
 //lista filtrada de pokemones fire
     let w = list.filter(p=>p.weaknesses.includes("Fairy"))
- document.getElementById('root').innerHTML = agua.map(name);
+
 
 
 
