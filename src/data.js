@@ -1,3 +1,4 @@
+
 //traer la data de los pokemones
 import data from './data/pokemon/pokemon.js';
 //en una variable se meten los datos del objeto Pokemon
@@ -14,7 +15,8 @@ export function pakiman () {
     agua.map(w =>{
        let d = document.createElement('d')
        d.classList.add("card")
-       d.innerHTML = ` <img src=${w.img} />
+       d.innerHTML = ` 
+       <img src=${W.img} />
        <p>${w.id}</p>
        <p>${w.name}</p>
        <p>${w.weaknesses}</p> 
@@ -24,6 +26,7 @@ export function pakiman () {
     })
 //lista filtrada de pokemones fire
     let w = list.filter(p=>p.weaknesses.includes("Fairy"))
+
 
 
 

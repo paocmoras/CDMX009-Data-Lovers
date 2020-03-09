@@ -1,3 +1,4 @@
+
 //-------------------------------Loader-----------------------------------------
 
 window.onload=function(){
@@ -18,14 +19,12 @@ import { pakiman } from './data.js';
 
 let btn = document.querySelector('#water')
 btn.addEventListener('click', mostrar)
- function mostrar(callback) {
-  callback(pakiman)
+ function mostrar() {
+   let div = document.getElementById('root');
+ div.innerHTML(pakiman());
  }
 
 
 
  
 
-
-
- 
