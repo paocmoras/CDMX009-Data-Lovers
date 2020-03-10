@@ -255,3 +255,7 @@ transition:all .3s;
 box-shadow:1px 5px 10px lightgrey;
 transform:scale(1.1)
 }
+
+#root{
+  display: -moz-grid-group;
+}

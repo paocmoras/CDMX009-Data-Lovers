@@ -29,7 +29,6 @@ export const  pakiman = () =>{
        <p>${w.egg}</p>
        `
        div.appendChild(d)
-       console.log(div)
     });
 //lista filtrada de pokemones fire
     // let w = list.filter(p=>p.weaknesses.includes("Fairy"))

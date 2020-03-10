@@ -19,6 +19,11 @@ import { pakiman } from './data.js';
 let btn = document.querySelector('#water');
 btn.addEventListener('click', mostrar)
 function mostrar() {
-  document.querySelector('#sidebar').style.display = 'none';
-  pakiman();
+ pakiman();
+}
+import { fires } from './data.js'
+let fire = document.querySelector('#fire');
+fire.addEventListener('click', listfire)
+function listfire() {
+  fires()
 }
