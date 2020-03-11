@@ -21,9 +21,3 @@ btn.addEventListener('click', mostrar)
 function mostrar() {
  pakiman();
 }
-import { fires } from './data.js'
-let fire = document.querySelector('#fire');
-fire.addEventListener('click', listfire)
-function listfire() {
-  fires()
-}
