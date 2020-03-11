@@ -20,11 +20,11 @@ export const  pakiman = () =>{
     agua.map(w =>{
        let d = document.createElement('d')
        d.classList.add("card")
-       d.innerHTML = ` 
+       d.innerHTML = `
        <img src=${w.img} />
        <p>${w.id}</p>
        <p>${w.name}</p>
-       <p>${w.weaknesses}</p> 
+       <p>${w.weaknesses}</p>
        <p>${w.type}</p>
        <p>${w.egg}</p>
        `
