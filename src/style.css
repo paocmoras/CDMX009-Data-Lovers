@@ -308,8 +308,12 @@ z-index: 2;
   right: -20px;
   bottom: -20px;
   background: url("img/fondo-principal.jpg");
+  background-size: cover !important;
+   -webkit-background-size: cover !important;
+   -moz-background-size: cover !important;
+   -o-background-size: cover !important;
   background-attachment: fixed;
-  filter: blur(3px);
+ filter: blur(10px);
 }
 
 .card:hover{

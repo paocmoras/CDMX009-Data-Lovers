@@ -9,15 +9,24 @@ window.onload=function(){
 
 $(".menu-bar").on("click", function(){
   $(".contenido").toggleClass("abrir");
-  console.log("menu")
+
 });
 
 //-----------------------------Pakiman------------------------------------------
 
-import { pakiman } from './data.js';
-
+import { typeWater, typeFire } from './data.js';
 let btn = document.querySelector('#water');
 btn.addEventListener('click', mostrar)
 function mostrar() {
-  pakiman()
+  document.querySelector('#root').innerHTML= '';
+ typeWater()
 }
+
+let btn1 = document.querySelector('#fire');
+btn1.addEventListener('click', mostrar1 )
+function mostrar1() {
+  document.querySelector('#root').innerHTML= '';
+  typeFire()
+  
+}
+

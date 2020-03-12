@@ -13,9 +13,9 @@ let list = data.pokemon;
 //funcion que se exportara en el main
 
 
-export const  pakiman = () =>{
+export const typeWater = () =>{
     //crea lista de los pokemones de tipo water
-       let agua = (c=>list.map(type))
+       let agua = list.filter(c=>c.type.includes('Water'))
            agua.filter(w=>w.type.includes('Water'))
         //console.log(agua)
        let div = document.querySelector('#root')
@@ -32,5 +32,24 @@ export const  pakiman = () =>{
           `
            div.appendChild(d)
         });
-    }
+}
     
+export const typeFire = () => {
+    let fuego = list.filter(f=>f.type.includes('Fire'))
+     fuego.filter(fu=>fu.type.includes('Fire'))
+     let div =document.querySelector('#root')
+     fuego.map(f=> {
+        let d = document.createElement('d')
+        d.classList.add("card")
+          d.innerHTML = `
+         <img src=${f.img} />
+          <p>${f.id}</p>
+         <p>${f.name}</p>
+          <p>${f.weaknesses}</p>
+          <p>${f.type}</p>
+          <p>${f.egg}</p>
+         `
+          div.appendChild(d)
+       })
+     
+    }
