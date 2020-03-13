@@ -4,6 +4,7 @@ import data from './data/pokemon/pokemon.js';
 //en una variable se meten los datos del objeto Pokemon
 let list = data.pokemon;
  let num = list.map(p=>p.num);
+ let page = document.querySelector('#page');
  console.log(num);
 // console.log(list);
 //se obtienen los nombre de los pokemones
@@ -12,26 +13,58 @@ let list = data.pokemon;
 //  list.map(p=>console.log(p.name));
 //funcion que se exportara en el main
 
+export const typeGrass = () =>{
+  let planta = list.filter(gr=>gr.type.includes('Grass'))
+  planta.filter(gr=>gr.type.includes('Grass'))
+  let div = document.querySelector('#root')
+  planta.map(gr =>{
+    let d = document.createElement('d')
+    d.classList.add("card")
+    d.innerHTML = `
+    <img src=${gr.img} />
+    <p>Numero: ${gr.id}</p>
+    <p>Nombre: ${gr.name}</p>
+    <p>Tipo: ${gr.type}</p>
+    <p>Altura: ${gr.height}</p>
+    <p>Peso: ${gr.weight}</p>
+    <p>Dulces: ${gr.candy}</p>
+    <p>Conteo de Dulces: ${gr.candy_count}</p>
+    <p>Huevo: ${gr.egg}</p>
+    <p>Probabilidad de aparición: ${gr.spawn_chance}</p>
+    <p>Promedio de generación: ${gr.avg_spawns}</p>
+    <p>Tiempo de generación: ${gr.spawn_time}</p>
+    <p>Multiplicadores: ${gr.multipliers}</p>
+    <p>Debilidades: ${gr.weaknesses}</p>
+    `
+    div.appendChild(d)
+  });
+}
 
-export const typeWater = () =>{
-    //crea lista de los pokemones de tipo water
-       let agua = list.filter(w=>w.type.includes('Water'))
-           agua.filter(w=>w.type.includes('Water'))
-        //console.log(agua)
-       let div = document.querySelector('#root')
-        agua.map(w =>{
-         let d = document.createElement('d')
-         d.classList.add("card")
-           d.innerHTML = `
-          <img src=${w.img} />
-           <p>${w.id}</p>
-          <p>${w.name}</p>
-           <p>${w.weaknesses}</p>
-           <p>${w.type}</p>
-           <p>${w.egg}</p>
-          `
-           div.appendChild(d)
-        });
+export const typePoison = () =>{
+  let veneno = list.filter(po=>po.type.includes('Poison'))
+  veneno.filter(po=>po.type.includes('Poison'))
+  let div = document.querySelector('#root')
+  veneno.map(po =>{
+    let d = document.createElement('d')
+    d.classList.add("card")
+    d.innerHTML = `
+    <img src=${po.img} />
+    <p>Numero: ${po.id}</p>
+    <p>Nombre: ${po.name}</p>
+    <p>Tipo: ${po.type}</p>
+    <p>Altura: ${po.height}</p>
+    <p>Peso: ${po.weight}</p>
+    <p>Dulces: ${po.candy}</p>
+    <p>Conteo de Dulces: ${po.candy_count}</p>
+    <p>Huevo: ${po.egg}</p>
+    <p>Probabilidad de aparición: ${po.spawn_chance}</p>
+    <p>Promedio de generación: ${po.avg_spawns}</p>
+    <p>Tiempo de generación: ${po.spawn_time}</p>
+    <p>Multiplicadores: ${po.multipliers}</p>
+    <p>Debilidades: ${po.weaknesses}</p>
+    `
+    div.appendChild(d)
+  });
 }
 
 export const typeFire = () => {
@@ -43,53 +76,23 @@ export const typeFire = () => {
         d.classList.add("card")
           d.innerHTML = `
          <img src=${f.img} />
-         <p>${f.id}</p>
-         <p>${f.name}</p>
-          <p>${f.weaknesses}</p>
-          <p>${f.type}</p>
-          <p>${f.egg}</p>
+         <p>Numero: ${f.id}</p>
+         <p>Nombre: ${f.name}</p>
+         <p>Tipo: ${f.type}</p>
+         <p>Altura: ${f.height}</p>
+         <p>Peso: ${f.weight}</p>
+         <p>Dulces: ${f.candy}</p>
+         <p>Conteo de Dulces: ${f.candy_count}</p>
+         <p>Huevo: ${f.egg}</p>
+         <p>Probabilidad de aparición: ${f.spawn_chance}</p>
+         <p>Promedio de generación: ${f.avg_spawns}</p>
+         <p>Tiempo de generación: ${f.spawn_time}</p>
+         <p>Multiplicadores: ${f.multipliers}</p>
+         <p>Debilidades: ${f.weaknesses}</p>
          `
           div.appendChild(d)
        });
 
-}
-
-export const typeGrass = () =>{
-       let planta = list.filter(gr=>gr.type.includes('Grass'))
-           planta.filter(gr=>gr.type.includes('Grass'))
-       let div = document.querySelector('#root')
-        planta.map(gr =>{
-         let d = document.createElement('d')
-         d.classList.add("card")
-           d.innerHTML = `
-          <img src=${gr.img} />
-          <p>${gr.id}</p>
-          <p>${gr.name}</p>
-           <p>${gr.weaknesses}</p>
-           <p>${gr.type}</p>
-           <p>${gr.egg}</p>
-          `
-           div.appendChild(d)
-        });
-}
-
-export const typePoison = () =>{
-       let veneno = list.filter(po=>po.type.includes('Poison'))
-           veneno.filter(po=>po.type.includes('Poison'))
-       let div = document.querySelector('#root')
-        veneno.map(po =>{
-         let d = document.createElement('d')
-         d.classList.add("card")
-           d.innerHTML = `
-          <img src=${po.img} />
-          <p>${po.id}</p>
-          <p>${po.name}</p>
-           <p>${po.weaknesses}</p>
-           <p>${po.type}</p>
-           <p>${po.egg}</p>
-          `
-           div.appendChild(d)
-        });
 }
 
 export const typeFlying = () =>{
@@ -101,14 +104,51 @@ export const typeFlying = () =>{
          d.classList.add("card")
            d.innerHTML = `
           <img src=${fl.img} />
-          <p>${fl.id}</p>
-          <p>${fl.name}</p>
-           <p>${fl.weaknesses}</p>
-           <p>${fl.type}</p>
-           <p>${fl.egg}</p>
+          <p>Numero: ${fl.id}</p>
+          <p>Nombre: ${fl.name}</p>
+          <p>Tipo: ${fl.type}</p>
+          <p>Altura: ${fl.height}</p>
+          <p>Peso: ${fl.weight}</p>
+          <p>Dulces: ${fl.candy}</p>
+          <p>Conteo de Dulces: ${fl.candy_count}</p>
+          <p>Huevo: ${fl.egg}</p>
+          <p>Probabilidad de aparición: ${fl.spawn_chance}</p>
+          <p>Promedio de generación: ${fl.avg_spawns}</p>
+          <p>Tiempo de generación: ${fl.spawn_time}</p>
+          <p>Multiplicadores: ${fl.multipliers}</p>
+          <p>Debilidades: ${fl.weaknesses}</p>
           `
            div.appendChild(d)
         });
+}
+
+export const typeWater = () =>{
+  //crea lista de los pokemones de tipo water
+  let agua = list.filter(w=>w.type.includes('Water'))
+  agua.filter(w=>w.type.includes('Water'))
+  //console.log(agua)
+  let div = document.querySelector('#root')
+  agua.map(w =>{
+    let d = document.createElement('d')
+    d.classList.add("card")
+    d.innerHTML = `
+    <img src=${w.img} />
+    <p>Numero: ${w.id}</p>
+    <p>Nombre: ${w.name}</p>
+    <p>Tipo: ${w.type}</p>
+    <p>Altura: ${w.height}</p>
+    <p>Peso: ${w.weight}</p>
+    <p>Dulces: ${w.candy}</p>
+    <p>Conteo de Dulces: ${w.candy_count}</p>
+    <p>Huevo: ${w.egg}</p>
+    <p>Probabilidad de aparición: ${w.spawn_chance}</p>
+    <p>Promedio de generación: ${w.avg_spawns}</p>
+    <p>Tiempo de generación: ${w.spawn_time}</p>
+    <p>Multiplicadores: ${w.multipliers}</p>
+    <p>Debilidades: ${w.weaknesses}</p>
+    `
+    div.appendChild(d)
+  });
 }
 
 export const typeBug = () =>{
@@ -120,11 +160,19 @@ export const typeBug = () =>{
          d.classList.add("card")
            d.innerHTML = `
           <img src=${b.img} />
-          <p>${b.id}</p>
-          <p>${b.name}</p>
-           <p>${b.weaknesses}</p>
-           <p>${b.type}</p>
-           <p>${b.egg}</p>
+          <p>Numero: ${b.id}</p>
+          <p>Nombre: ${b.name}</p>
+          <p>Tipo: ${b.type}</p>
+          <p>Altura: ${b.height}</p>
+          <p>Peso: ${b.weight}</p>
+          <p>Dulces: ${b.candy}</p>
+          <p>Conteo de Dulces: ${b.candy_count}</p>
+          <p>Huevo: ${b.egg}</p>
+          <p>Probabilidad de aparición: ${b.spawn_chance}</p>
+          <p>Promedio de generación: ${b.avg_spawns}</p>
+          <p>Tiempo de generación: ${b.spawn_time}</p>
+          <p>Multiplicadores: ${b.multipliers}</p>
+          <p>Debilidades: ${b.weaknesses}</p>
           `
            div.appendChild(d)
         });
@@ -139,11 +187,19 @@ export const typeNormal = () =>{
          d.classList.add("card")
            d.innerHTML = `
           <img src=${n.img} />
-          <p>${n.id}</p>
-          <p>${n.name}</p>
-           <p>${n.weaknesses}</p>
-           <p>${n.type}</p>
-           <p>${n.egg}</p>
+          <p>Numero: ${n.id}</p>
+          <p>Nombre: ${n.name}</p>
+          <p>Tipo: ${n.type}</p>
+          <p>Altura: ${n.height}</p>
+          <p>Peso: ${n.weight}</p>
+          <p>Dulces: ${n.candy}</p>
+          <p>Conteo de Dulces: ${n.candy_count}</p>
+          <p>Huevo: ${n.egg}</p>
+          <p>Probabilidad de aparición: ${n.spawn_chance}</p>
+          <p>Promedio de generación: ${n.avg_spawns}</p>
+          <p>Tiempo de generación: ${n.spawn_time}</p>
+          <p>Multiplicadores: ${n.multipliers}</p>
+          <p>Debilidades: ${n.weaknesses}</p>
           `
            div.appendChild(d)
         });
@@ -158,11 +214,19 @@ export const typeElectric = () =>{
          d.classList.add("card")
            d.innerHTML = `
           <img src=${el.img} />
-          <p>${el.id}</p>
-          <p>${el.name}</p>
-           <p>${el.weaknesses}</p>
-           <p>${el.type}</p>
-           <p>${el.egg}</p>
+          <p>Numero: ${el.id}</p>
+          <p>Nombre: ${el.name}</p>
+          <p>Tipo: ${el.type}</p>
+          <p>Altura: ${el.height}</p>
+          <p>Peso: ${el.weight}</p>
+          <p>Dulces: ${el.candy}</p>
+          <p>Conteo de Dulces: ${el.candy_count}</p>
+          <p>Huevo: ${el.egg}</p>
+          <p>Probabilidad de aparición: ${el.spawn_chance}</p>
+          <p>Promedio de generación: ${el.avg_spawns}</p>
+          <p>Tiempo de generación: ${el.spawn_time}</p>
+          <p>Multiplicadores: ${el.multipliers}</p>
+          <p>Debilidades: ${el.weaknesses}</p>
           `
            div.appendChild(d)
         });
@@ -177,11 +241,19 @@ export const typeGround = () =>{
          d.classList.add("card")
            d.innerHTML = `
           <img src=${gro.img} />
-          <p>${gro.id}</p>
-          <p>${gro.name}</p>
-           <p>${gro.weaknesses}</p>
-           <p>${gro.type}</p>
-           <p>${gro.egg}</p>
+          <p>Numero: ${gro.id}</p>
+          <p>Nombre: ${gro.name}</p>
+          <p>Tipo: ${gro.type}</p>
+          <p>Altura: ${gro.height}</p>
+          <p>Peso: ${gro.weight}</p>
+          <p>Dulces: ${gro.candy}</p>
+          <p>Conteo de Dulces: ${gro.candy_count}</p>
+          <p>Huevo: ${gro.egg}</p>
+          <p>Probabilidad de aparición: ${gro.spawn_chance}</p>
+          <p>Promedio de generación: ${gro.avg_spawns}</p>
+          <p>Tiempo de generación: ${gro.spawn_time}</p>
+          <p>Multiplicadores: ${gro.multipliers}</p>
+          <p>Debilidades: ${gro.weaknesses}</p>
           `
            div.appendChild(d)
         });
@@ -196,11 +268,19 @@ export const typeFighting = () =>{
          d.classList.add("card")
            d.innerHTML = `
           <img src=${fig.img} />
-          <p>${fig.id}</p>
-          <p>${fig.name}</p>
-           <p>${fig.weaknesses}</p>
-           <p>${fig.type}</p>
-           <p>${fig.egg}</p>
+          <p>Numero: ${fig.id}</p>
+          <p>Nombre: ${fig.name}</p>
+          <p>Tipo: ${fig.type}</p>
+          <p>Altura: ${fig.height}</p>
+          <p>Peso: ${fig.weight}</p>
+          <p>Dulces: ${fig.candy}</p>
+          <p>Conteo de Dulces: ${fig.candy_count}</p>
+          <p>Huevo: ${fig.egg}</p>
+          <p>Probabilidad de aparición: ${fig.spawn_chance}</p>
+          <p>Promedio de generación: ${fig.avg_spawns}</p>
+          <p>Tiempo de generación: ${fig.spawn_time}</p>
+          <p>Multiplicadores: ${fig.multipliers}</p>
+          <p>Debilidades: ${fig.weaknesses}</p>
           `
            div.appendChild(d)
         });
@@ -215,11 +295,19 @@ export const typePsychic = () =>{
          d.classList.add("card")
            d.innerHTML = `
           <img src=${ps.img} />
-          <p>${ps.id}</p>
-          <p>${ps.name}</p>
-           <p>${ps.weaknesses}</p>
-           <p>${ps.type}</p>
-           <p>${ps.egg}</p>
+          <p>Numero: ${ps.id}</p>
+          <p>Nombre: ${ps.name}</p>
+          <p>Tipo: ${ps.type}</p>
+          <p>Altura: ${ps.height}</p>
+          <p>Peso: ${ps.weight}</p>
+          <p>Dulces: ${ps.candy}</p>
+          <p>Conteo de Dulces: ${ps.candy_count}</p>
+          <p>Huevo: ${ps.egg}</p>
+          <p>Probabilidad de aparición: ${ps.spawn_chance}</p>
+          <p>Promedio de generación: ${ps.avg_spawns}</p>
+          <p>Tiempo de generación: ${ps.spawn_time}</p>
+          <p>Multiplicadores: ${ps.multipliers}</p>
+          <p>Debilidades: ${ps.weaknesses}</p>
           `
            div.appendChild(d)
         });
@@ -234,11 +322,19 @@ export const typeRock = () =>{
          d.classList.add("card")
            d.innerHTML = `
           <img src=${r.img} />
-          <p>${r.id}</p>
-          <p>${r.name}</p>
-           <p>${r.weaknesses}</p>
-           <p>${r.type}</p>
-           <p>${r.egg}</p>
+          <p>Numero: ${r.id}</p>
+          <p>Nombre: ${r.name}</p>
+          <p>Tipo: ${r.type}</p>
+          <p>Altura: ${r.height}</p>
+          <p>Peso: ${r.weight}</p>
+          <p>Dulces: ${r.candy}</p>
+          <p>Conteo de Dulces: ${r.candy_count}</p>
+          <p>Huevo: ${r.egg}</p>
+          <p>Probabilidad de aparición: ${r.spawn_chance}</p>
+          <p>Promedio de generación: ${r.avg_spawns}</p>
+          <p>Tiempo de generación: ${r.spawn_time}</p>
+          <p>Multiplicadores: ${r.multipliers}</p>
+          <p>Debilidades: ${r.weaknesses}</p>
           `
            div.appendChild(d)
         });
@@ -253,11 +349,19 @@ export const typeIce = () =>{
          d.classList.add("card")
            d.innerHTML = `
           <img src=${i.img} />
-          <p>${i.id}</p>
-          <p>${i.name}</p>
-           <p>${i.weaknesses}</p>
-           <p>${i.type}</p>
-           <p>${i.egg}</p>
+          <p>Numero: ${i.id}</p>
+          <p>Nombre: ${i.name}</p>
+          <p>Tipo: ${i.type}</p>
+          <p>Altura: ${i.height}</p>
+          <p>Peso: ${i.weight}</p>
+          <p>Dulces: ${i.candy}</p>
+          <p>Conteo de Dulces: ${i.candy_count}</p>
+          <p>Huevo: ${i.egg}</p>
+          <p>Probabilidad de aparición: ${i.spawn_chance}</p>
+          <p>Promedio de generación: ${i.avg_spawns}</p>
+          <p>Tiempo de generación: ${i.spawn_time}</p>
+          <p>Multiplicadores: ${i.multipliers}</p>
+          <p>Debilidades: ${i.weaknesses}</p>
           `
            div.appendChild(d)
         });
@@ -272,11 +376,19 @@ export const typeGhost = () =>{
          d.classList.add("card")
            d.innerHTML = `
           <img src=${gh.img} />
-          <p>${gh.id}</p>
-          <p>${gh.name}</p>
-           <p>${gh.weaknesses}</p>
-           <p>${gh.type}</p>
-           <p>${gh.egg}</p>
+          <p>Numero: ${gh.id}</p>
+          <p>Nombre: ${gh.name}</p>
+          <p>Tipo: ${gh.type}</p>
+          <p>Altura: ${gh.height}</p>
+          <p>Peso: ${gh.weight}</p>
+          <p>Dulces: ${gh.candy}</p>
+          <p>Conteo de Dulces: ${gh.candy_count}</p>
+          <p>Huevo: ${gh.egg}</p>
+          <p>Probabilidad de aparición: ${gh.spawn_chance}</p>
+          <p>Promedio de generación: ${gh.avg_spawns}</p>
+          <p>Tiempo de generación: ${gh.spawn_time}</p>
+          <p>Multiplicadores: ${gh.multipliers}</p>
+          <p>Debilidades: ${gh.weaknesses}</p>
           `
            div.appendChild(d)
         });
@@ -291,12 +403,33 @@ export const typeDragon = () =>{
          d.classList.add("card")
            d.innerHTML = `
           <img src=${dr.img} />
-          <p>${dr.id}</p>
-          <p>${dr.name}</p>
-           <p>${dr.weaknesses}</p>
-           <p>${dr.type}</p>
-           <p>${dr.egg}</p>
+          <p>Numero: ${dr.id}</p>
+          <p>Nombre: ${dr.name}</p>
+          <p>Tipo: ${dr.type}</p>
+          <p>Altura: ${dr.height}</p>
+          <p>Peso: ${dr.weight}</p>
+          <p>Dulces: ${dr.candy}</p>
+          <p>Conteo de Dulces: ${dr.candy_count}</p>
+          <p>Huevo: ${dr.egg}</p>
+          <p>Probabilidad de aparición: ${dr.spawn_chance}</p>
+          <p>Promedio de generación: ${dr.avg_spawns}</p>
+          <p>Tiempo de generación: ${dr.spawn_time}</p>
+          <p>Multiplicadores: ${dr.multipliers}</p>
+          <p>Debilidades: ${dr.weaknesses}</p>
           `
            div.appendChild(d)
         });
 }
+
+///////////////////////////Todos los pokemones//////////////////////////////////
+
+export const pokemones = () =>{
+       let c = list.forEach(c=>{
+     const dat = document.createElement('p')
+      dat.classList.add("cards")
+      dat.innerHTML += `
+        <img src=${c.img} />
+        `
+       page.appendChild(dat)
+     })
+     }
