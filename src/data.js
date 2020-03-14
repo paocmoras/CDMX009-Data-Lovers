@@ -4,7 +4,7 @@ import data from './data/pokemon/pokemon.js';
 //en una variable se meten los datos del objeto Pokemon
 let list = data.pokemon;
  let num = list.map(p=>p.num);
- let page = document.querySelector('#page');
+ let page = document.querySelector('#root');
  console.log(num);
 // console.log(list);
 //se obtienen los nombre de los pokemones
@@ -12,6 +12,8 @@ let list = data.pokemon;
 // console.log(name);
 //  list.map(p=>console.log(p.name));
 //funcion que se exportara en el main
+
+/////////////////////Clasificación por tipo de pokemon//////////////////////////
 
 export const typeGrass = () =>{
   let planta = list.filter(gr=>gr.type.includes('Grass'))
@@ -21,9 +23,9 @@ export const typeGrass = () =>{
     let d = document.createElement('d')
     d.classList.add("card")
     d.innerHTML = `
-    <img src=${gr.img} />
+    <h2>${gr.name}</h2><br>
+    <img src=${gr.img} /><br>
     <p>Numero: ${gr.id}</p>
-    <p>Nombre: ${gr.name}</p>
     <p>Tipo: ${gr.type}</p>
     <p>Altura: ${gr.height}</p>
     <p>Peso: ${gr.weight}</p>
@@ -48,9 +50,9 @@ export const typePoison = () =>{
     let d = document.createElement('d')
     d.classList.add("card")
     d.innerHTML = `
-    <img src=${po.img} />
+    <h2>${po.name}</h2><br>
+    <img src=${po.img} /><br>
     <p>Numero: ${po.id}</p>
-    <p>Nombre: ${po.name}</p>
     <p>Tipo: ${po.type}</p>
     <p>Altura: ${po.height}</p>
     <p>Peso: ${po.weight}</p>
@@ -75,9 +77,9 @@ export const typeFire = () => {
         let d = document.createElement('d')
         d.classList.add("card")
           d.innerHTML = `
-         <img src=${f.img} />
+         <h2>${f.name}</h2><br>
+         <img src=${f.img} /><br>
          <p>Numero: ${f.id}</p>
-         <p>Nombre: ${f.name}</p>
          <p>Tipo: ${f.type}</p>
          <p>Altura: ${f.height}</p>
          <p>Peso: ${f.weight}</p>
@@ -103,9 +105,9 @@ export const typeFlying = () =>{
          let d = document.createElement('d')
          d.classList.add("card")
            d.innerHTML = `
-          <img src=${fl.img} />
+          <h2>${fl.name}</h2>
+          <img src=${fl.img} /><br>
           <p>Numero: ${fl.id}</p>
-          <p>Nombre: ${fl.name}</p>
           <p>Tipo: ${fl.type}</p>
           <p>Altura: ${fl.height}</p>
           <p>Peso: ${fl.weight}</p>
@@ -132,9 +134,9 @@ export const typeWater = () =>{
     let d = document.createElement('d')
     d.classList.add("card")
     d.innerHTML = `
-    <img src=${w.img} />
+    <h2>${w.name}</h2><br>
+    <img src=${w.img} /><br>
     <p>Numero: ${w.id}</p>
-    <p>Nombre: ${w.name}</p>
     <p>Tipo: ${w.type}</p>
     <p>Altura: ${w.height}</p>
     <p>Peso: ${w.weight}</p>
@@ -159,9 +161,9 @@ export const typeBug = () =>{
          let d = document.createElement('d')
          d.classList.add("card")
            d.innerHTML = `
-          <img src=${b.img} />
+          <h2>${b.name}</h2><br>
+          <img src=${b.img} /><br>
           <p>Numero: ${b.id}</p>
-          <p>Nombre: ${b.name}</p>
           <p>Tipo: ${b.type}</p>
           <p>Altura: ${b.height}</p>
           <p>Peso: ${b.weight}</p>
@@ -186,9 +188,9 @@ export const typeNormal = () =>{
          let d = document.createElement('d')
          d.classList.add("card")
            d.innerHTML = `
-          <img src=${n.img} />
+          <h2>${n.name}</h2><br>
+          <img src=${n.img} /><br>
           <p>Numero: ${n.id}</p>
-          <p>Nombre: ${n.name}</p>
           <p>Tipo: ${n.type}</p>
           <p>Altura: ${n.height}</p>
           <p>Peso: ${n.weight}</p>
@@ -213,9 +215,9 @@ export const typeElectric = () =>{
          let d = document.createElement('d')
          d.classList.add("card")
            d.innerHTML = `
-          <img src=${el.img} />
+           <h2>${el.name}</h2><br>
+          <img src=${el.img} /><br>
           <p>Numero: ${el.id}</p>
-          <p>Nombre: ${el.name}</p>
           <p>Tipo: ${el.type}</p>
           <p>Altura: ${el.height}</p>
           <p>Peso: ${el.weight}</p>
@@ -240,9 +242,9 @@ export const typeGround = () =>{
          let d = document.createElement('d')
          d.classList.add("card")
            d.innerHTML = `
-          <img src=${gro.img} />
+           <h2>${gro.name}</h2><br>
+          <img src=${gro.img} /><br>
           <p>Numero: ${gro.id}</p>
-          <p>Nombre: ${gro.name}</p>
           <p>Tipo: ${gro.type}</p>
           <p>Altura: ${gro.height}</p>
           <p>Peso: ${gro.weight}</p>
@@ -267,9 +269,9 @@ export const typeFighting = () =>{
          let d = document.createElement('d')
          d.classList.add("card")
            d.innerHTML = `
-          <img src=${fig.img} />
+           <h2>${fig.name}</h2><br>
+          <img src=${fig.img} /><br>
           <p>Numero: ${fig.id}</p>
-          <p>Nombre: ${fig.name}</p>
           <p>Tipo: ${fig.type}</p>
           <p>Altura: ${fig.height}</p>
           <p>Peso: ${fig.weight}</p>
@@ -294,9 +296,9 @@ export const typePsychic = () =>{
          let d = document.createElement('d')
          d.classList.add("card")
            d.innerHTML = `
-          <img src=${ps.img} />
+           <h2>${ps.name}</h2><br>
+          <img src=${ps.img} /><br>
           <p>Numero: ${ps.id}</p>
-          <p>Nombre: ${ps.name}</p>
           <p>Tipo: ${ps.type}</p>
           <p>Altura: ${ps.height}</p>
           <p>Peso: ${ps.weight}</p>
@@ -321,9 +323,9 @@ export const typeRock = () =>{
          let d = document.createElement('d')
          d.classList.add("card")
            d.innerHTML = `
-          <img src=${r.img} />
+           <h2>${r.name}</h2><br>
+          <img src=${r.img} /><br>
           <p>Numero: ${r.id}</p>
-          <p>Nombre: ${r.name}</p>
           <p>Tipo: ${r.type}</p>
           <p>Altura: ${r.height}</p>
           <p>Peso: ${r.weight}</p>
@@ -348,9 +350,9 @@ export const typeIce = () =>{
          let d = document.createElement('d')
          d.classList.add("card")
            d.innerHTML = `
-          <img src=${i.img} />
+           <h2>${i.name}</h2><br>
+          <img src=${i.img} /><br>
           <p>Numero: ${i.id}</p>
-          <p>Nombre: ${i.name}</p>
           <p>Tipo: ${i.type}</p>
           <p>Altura: ${i.height}</p>
           <p>Peso: ${i.weight}</p>
@@ -375,9 +377,9 @@ export const typeGhost = () =>{
          let d = document.createElement('d')
          d.classList.add("card")
            d.innerHTML = `
-          <img src=${gh.img} />
+          <h2>${gh.name}</h2><br>
+          <img src=${gh.img} /><br>
           <p>Numero: ${gh.id}</p>
-          <p>Nombre: ${gh.name}</p>
           <p>Tipo: ${gh.type}</p>
           <p>Altura: ${gh.height}</p>
           <p>Peso: ${gh.weight}</p>
@@ -402,9 +404,9 @@ export const typeDragon = () =>{
          let d = document.createElement('d')
          d.classList.add("card")
            d.innerHTML = `
-          <img src=${dr.img} />
+           <h2>${dr.name}</h2><br>
+          <img src=${dr.img} /><br>
           <p>Numero: ${dr.id}</p>
-          <p>Nombre: ${dr.name}</p>
           <p>Tipo: ${dr.type}</p>
           <p>Altura: ${dr.height}</p>
           <p>Peso: ${dr.weight}</p>
@@ -426,9 +428,22 @@ export const typeDragon = () =>{
 export const pokemones = () =>{
        let c = list.forEach(c=>{
      const dat = document.createElement('p')
-      dat.classList.add("cards")
+      dat.classList.add("card")
       dat.innerHTML += `
-        <img src=${c.img} />
+        <h2>${c.name}</h2><br>
+        <img src=${c.img} /><br>
+        <p>Numero: ${c.id}</p>
+        <p>Tipo: ${c.type}</p>
+        <p>Altura: ${c.height}</p>
+        <p>Peso: ${c.weight}</p>
+        <p>Dulces: ${c.candy}</p>
+        <p>Conteo de Dulces: ${c.candy_count}</p>
+        <p>Huevo: ${c.egg}</p>
+        <p>Probabilidad de aparición: ${c.spawn_chance}</p>
+        <p>Promedio de generación: ${c.avg_spawns}</p>
+        <p>Tiempo de generación: ${c.spawn_time}</p>
+        <p>Multiplicadores: ${c.multipliers}</p>
+        <p>Debilidades: ${c.weaknesses}</p>
         `
        page.appendChild(dat)
      })

@@ -13,7 +13,7 @@ $(".menu-bar").on("click", function(){
 });
 
 
-//-----------------------------Pakiman------------------------------------------
+//---------------------Clasificación por tipo de pokemon------------------------
 
 import { typeGrass, typePoison, typeFire, typeFlying, typeWater, typeBug,
 typeNormal, typeElectric, typeGround, typeFighting, typePsychic,
@@ -127,5 +127,6 @@ function mostrar15() {
 /*************************Evento Todos los Pokemones****************************/
 addEventListener('load', todos)
 function todos() {
+  document.querySelector ("#root").innerHTML="";
   pokemones()
 }
