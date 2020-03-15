@@ -63,18 +63,18 @@ de regreso, teniendo como resultado los prototipos de alta fidelidad.
 
 ## 5. Prototipo de Alta Fidelidad
 
-<img src= "/src/img/Pantallas de prototipo figma.jpeg">
+<img src= "/src/img/Pantallas de prototipo figma.jpg">
 
-<img src= "/src/img/Pantallas de prototipo de Alta Fidelidad.jpeg">
+<img src= "/src/img/Pantallas de prototipo de Alta Fidelidad.jpg">
 
-<img src= "/src/img/Pantallas de prototipo de Alta Fidelidad1.jpeg">
+<img src= "/src/img/Pantallas de prototipo de Alta Fidelidad1.jpg">
 
 
 ## 6. Imagen Final Del Proyecto
 
-<img src= "/src/img/Pantalla final0.jpeg">
+<img src= "/src/img/Pantalla final0.jpg">
 
-<img src= "/src/img/Pantalla final.jpeg">
+<img src= "/src/img/Pantalla final.jpg">
 
 
 ## 7. Objetivos de aprendizaje
