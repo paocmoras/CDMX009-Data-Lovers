@@ -23,12 +23,17 @@ filtros como tipo de pokémon, Pokémon por abecedario, Pokémon por nombre y To
 los Pokémones.
 
 ## 2. Historias de Usuario:
+
 * Se hicieron dos historias de Usuario y en base a ello se trabajo en el diseño:
+
 ###Primer Historia de usuario
+
 En la historia del primer Usuario tomamos en cuenta a niños por ello se penso en
 la idea de poner todos los Pokémones en la pagina principal del proyecto,
 sin tener que interactuar tanto.
+
 ###Segunda Historia de usuario
+
 En la historia del segundo Usuario se penso en todos aquellos fans de pokémon
 lo que requeria pensar en filtrar pokemones de diferentes maneras para darle una
 mayor satisfaccion al usuario mediante la interacción de la página.
