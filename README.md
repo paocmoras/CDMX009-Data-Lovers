@@ -7,12 +7,12 @@
 
 * [1. Resumen del proyecto](#1-resumen-del-proyecto)
 * [2. Historias de Usuario](#2-Historias-de-Usuario)
-* [3. Prototipados](#4-Prototipados)
-* [5. Criterios de aceptación mínimos del proyecto](#5-criterios-de-aceptación-mínimos-del-proyecto)
-* [6. Parte adicional-opcional (extensión)](#6-parte-adicional-opcional-extensión)
-* [7. Consideraciones técnicas](#7-consideraciones-técnicas)
-* [8. Pistas, tips y lecturas complementarias](#8-pistas-tips-y-lecturas-complementarias)
-* [9. Objetivos de aprendizaje](#3-objetivos-de-aprendizaje)
+* [3. Prototipado en papel](#3-Prototipado-en-papel)
+* [4. Feedback](#4-Feedback)
+* [5. Prototipo de Alta Fidelidad](#5-Prototipo-de-Alta-Fidelidad)
+* [6. Imagen Final Del Proyecto](#6-Imagen-Final-Del-Proyecto)
+* [7. Objetivos de aprendizaje](#7-objetivos-de-aprendizaje)
+
 
 ***
 
@@ -26,13 +26,13 @@ los Pokémones.
 
 * Se hicieron dos historias de Usuario y en base a ello se trabajo en el diseño:
 
-###Primer Historia de usuario
+### Primer Historia de usuario
 
 En la historia del primer Usuario tomamos en cuenta a niños por ello se penso en
 la idea de poner todos los Pokémones en la pagina principal del proyecto,
 sin tener que interactuar tanto.
 
-###Segunda Historia de usuario
+### Segunda Historia de usuario
 
 En la historia del segundo Usuario se penso en todos aquellos fans de pokémon
 lo que requeria pensar en filtrar pokemones de diferentes maneras para darle una
@@ -42,51 +42,42 @@ mayor satisfaccion al usuario mediante la interacción de la página.
 <img src= "src/img/Historia de Usuario.png">
 
 
-## 3. Prototipados
+## 3. Prototipado en papel
 
+* En base a las historias de Usuario se comenzo a hacer prototipos de baja
+  fidelidad
 
-
-## 5. Criterios de aceptación mínimos del proyecto
-
-
-
-### Definición del producto
-
-
-
-### Historias de usuario
-
-
-
-### Diseño de la Interfaz de Usuario
 
 #### Prototipo de baja fidelidad
 
-
-#### Prototipo de alta fidelidad
-
+<img src= "/src/img/Prototipo en papel.jpeg">
 
 
-#### Testeos de usabilidad
+## 4. Feedback
+
+* Iteramos con las compañeras dandonos su punto de vista para poder
+mejorar la idea visual de nuestra página, por lo que de acuerdo a las iteraciónes
+se complemento el proyecto con botones para ordenar alfabeticamente y un botón
+de regreso, teniendo como resultado los prototipos de alta fidelidad.
 
 
+## 5. Prototipo de Alta Fidelidad
 
-### Implementación de la Interfaz de Usuario (HTML/CSS/JS)
+<img src= "/src/img/Pantallas de prototipo figma.jpeg">
 
+<img src= "/src/img/Pantallas de prototipo de Alta Fidelidad.jpeg">
 
-### Pruebas unitarias
-
-
-
-## 6. Parte adicional-opcional (extensión)
+<img src= "/src/img/Pantallas de prototipo de Alta Fidelidad1.jpeg">
 
 
-## 7. Consideraciones técnicas
+## 6. Imagen Final Del Proyecto
+
+<img src= "/src/img/Pantalla final0.jpeg">
+
+<img src= "/src/img/Pantalla final.jpeg">
 
 
-## 8. Pistas, tips y lecturas complementarias
-
-## 9. Objetivos de aprendizaje
+## 7. Objetivos de aprendizaje
 
 El objetivo principal de este proyecto es que, entendiendo las necesidades de
 tus usuarios, aprendas a diseñar y construir una interfaz web donde se pueda
