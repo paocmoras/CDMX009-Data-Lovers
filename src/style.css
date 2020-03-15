@@ -341,3 +341,38 @@ z-index: 2;
 box-shadow:1px 5px 10px lightgrey;
 transform:scale(1.1)
 }
+
+/******************************Botones abecedario******************************/
+
+.alpha{
+position: relative;
+text-align: center;
+justify-content: center;
+width: 3.5vw;
+height: 3.5vh;
+left: 20px;
+top: 0;
+margin: 1.5px;
+font-family: Sitka;
+font-size: 0.9vw;
+border-radius: 15px;
+background-color: #fde007;
+border: 3px solid #4358b1;
+shadow: 7px 5px 5px #110033;
+align-content: center;
+cursor: pointer;
+}
+
+.alpha:hover{
+box-shadow:1px 5px 10px lightgrey;
+transform:scale(1.1)
+}
+
+ #abecedario{
+  display:flex;
+  display: -moz-grid-group;
+  flex-wrap:wrap;
+  padding: 0;
+  text-align: center;
+  justify-content: center;
+}

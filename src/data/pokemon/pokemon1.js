@@ -1,4 +1,4 @@
-//export default {
+export default {
   "pokemon": [{
     "id": 1,
     "num": "001",
@@ -992,7 +992,8 @@
     "name": "Clefairy",
     "img": "http://www.serebii.net/pokemongo/pokemon/035.png",
     "type": [
-      "Normal"
+      "Normal",
+      "Fairy"
     ],
     "height": "0.61 m",
     "weight": "7.5 kg",
@@ -1019,7 +1020,8 @@
     "name": "Clefable",
     "img": "http://www.serebii.net/pokemongo/pokemon/036.png",
     "type": [
-      "Normal"
+      "Normal",
+      "Fairy"
     ],
     "height": "1.30 m",
     "weight": "40.0 kg",
@@ -1096,7 +1098,8 @@
     "name": "Jigglypuff",
     "img": "http://www.serebii.net/pokemongo/pokemon/039.png",
     "type": [
-      "Normal"
+      "Normal",
+      "Fairy"
     ],
     "height": "0.51 m",
     "weight": "5.5 kg",
@@ -1120,7 +1123,8 @@
     "name": "Wigglytuff",
     "img": "http://www.serebii.net/pokemongo/pokemon/040.png",
     "type": [
-      "Normal"
+      "Normal",
+      "Fairy"
     ],
     "height": "0.99 m",
     "weight": "12.0 kg",
@@ -2299,7 +2303,8 @@
     "name": "Magnemite",
     "img": "http://www.serebii.net/pokemongo/pokemon/081.png",
     "type": [
-      "Electric"
+      "Electric",
+      "Steel"
     ],
     "height": "0.30 m",
     "weight": "6.0 kg",
@@ -2328,7 +2333,8 @@
     "name": "Magneton",
     "img": "http://www.serebii.net/pokemongo/pokemon/082.png",
     "type": [
-      "Electric"
+      "Electric",
+      "Steel"
     ],
     "height": "0.99 m",
     "weight": "60.0 kg",
@@ -3363,7 +3369,8 @@
     "name": "Mr. Mime",
     "img": "http://www.serebii.net/pokemongo/pokemon/122.png",
     "type": [
-      "Psychic"
+      "Psychic",
+      "Fairy"
     ],
     "height": "1.30 m",
     "weight": "54.5 kg",
