@@ -19,7 +19,7 @@ typeNormal, typeElectric, typeGround, typeFighting, typePsychic,
 typeRock, typeIce, typeGhost, typeDragon, typeGrass, typeFairy, typeSteel,
 pokemones, wordA, wordB, wordC, wordD, wordE, wordF, wordG, wordH, wordI, wordJ,
 wordK, wordL, wordM, wordN, wordO, wordP, wordR, wordS, wordT, wordV, wordW,
-wordZ} from './data.js';
+wordZ, buscador} from './data.js';
 
 //---------------------Clasificación por tipo de pokemon------------------------
 
@@ -302,4 +302,11 @@ z.addEventListener('click', all22)
 function all22() {
   document.querySelector('#root').innerHTML="";
   wordZ()
+}
+let btn = document.querySelector('.btn')
+btn.addEventListener('click', filtrar);
+function filtrar(){
+  document.querySelector('#root').innerHTML="";
+  buscador()
+
 }

@@ -1098,3 +1098,34 @@ export const wordZ = () =>{
     div.appendChild(d)
   });
 }
+
+export const buscador = () =>{ 
+  const search = document.querySelector('.src');
+  let f = search.value;
+  let g = f[0].toUpperCase() + f.slice(1);
+   let d =list.filter(c=>c.name.includes(g))
+   let dat = d.filter(c=>c.name.includes(g))
+   let div = document.querySelector('#root')
+   dat.map(c=>{
+     let d = document.createElement('d')
+     d.classList.add("card")
+     d.innerHTML = `
+     <h2>${c.name}</h2><br>
+     <img src=${c.img} /><br>
+     <p>Nombre: ${c.name}</p>
+     <p>Tipo: ${c.type}</p>
+     <p>Altura: ${c.height}</p>
+     <p>Peso: ${c.weight}</p>
+     <p>Dulces: ${c.candy}</p>
+     <p>Conteo de Dulces: ${c.candy_count}</p>
+     <p>Huevo: ${c.egg}</p>
+     <p>Probabilidad de aparición: ${c.spawn_chance}</p>
+     <p>Promedio de generación: ${c.avg_spawns}</p>
+     <p>Tiempo de generación: ${c.spawn_time}</p>
+     <p>Multiplicadores: ${c.multipliers}</p>
+     <p>Debilidades: ${c.weaknesses}</p>
+     `
+     div.appendChild(d)
+   });
+   console.log(g);
+   }

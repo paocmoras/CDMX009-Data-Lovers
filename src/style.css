@@ -233,6 +233,7 @@ input.src{
   background: #175E95 url("img/Lupa.png") no-repeat 9px center;
   width: 45px;/*tamaño del placeholder antes de la animacion*/
   transition: all .5s;
+  color: #fff;
 }
 
 input.src:hover{
