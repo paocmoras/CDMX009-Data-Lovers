@@ -514,7 +514,7 @@ export const wordA = () =>{
     d.innerHTML = `
     <h2>${A.name}</h2><br>
     <img src=${A.img} /><br>
-    <p>Nombre: ${A.name}</p>
+    <p>Numero: ${A.id}</p>
     <p>Tipo: ${A.type}</p>
     <p>Altura: ${A.height}</p>
     <p>Peso: ${A.weight}</p>
@@ -542,7 +542,7 @@ export const wordB = () =>{
     d.innerHTML = `
     <h2>${B.name}</h2><br>
     <img src=${B.img} /><br>
-    <p>Nombre: ${B.name}</p>
+    <p>Numero: ${B.id}</p>
     <p>Tipo: ${B.type}</p>
     <p>Altura: ${B.height}</p>
     <p>Peso: ${B.weight}</p>
@@ -569,7 +569,7 @@ export const wordC = () =>{
     d.innerHTML = `
     <h2>${C.name}</h2><br>
     <img src=${C.img} /><br>
-    <p>Nombre: ${C.name}</p>
+    <p>Numero: ${C.id}</p>
     <p>Tipo: ${C.type}</p>
     <p>Altura: ${C.height}</p>
     <p>Peso: ${C.weight}</p>
@@ -596,7 +596,7 @@ export const wordD = () =>{
     d.innerHTML = `
     <h2>${D.name}</h2><br>
     <img src=${D.img} /><br>
-    <p>Nombre: ${D.name}</p>
+    <p>Numero: ${D.id}</p>
     <p>Tipo: ${D.type}</p>
     <p>Altura: ${D.height}</p>
     <p>Peso: ${D.weight}</p>
@@ -623,7 +623,7 @@ export const wordE = () =>{
     d.innerHTML = `
     <h2>${E.name}</h2><br>
     <img src=${E.img} /><br>
-    <p>Nombre: ${E.name}</p>
+    <p>Numero: ${E.id}</p>
     <p>Tipo: ${E.type}</p>
     <p>Altura: ${E.height}</p>
     <p>Peso: ${E.weight}</p>
@@ -650,7 +650,7 @@ export const wordF = () =>{
     d.innerHTML = `
     <h2>${F.name}</h2><br>
     <img src=${F.img} /><br>
-    <p>Nombre: ${F.name}</p>
+    <p>Numero: ${F.id}</p>
     <p>Tipo: ${F.type}</p>
     <p>Altura: ${F.height}</p>
     <p>Peso: ${F.weight}</p>
@@ -677,7 +677,7 @@ export const wordG = () =>{
     d.innerHTML = `
     <h2>${G.name}</h2><br>
     <img src=${G.img} /><br>
-    <p>Nombre: ${G.name}</p>
+    <p>Numero: ${G.id}</p>
     <p>Tipo: ${G.type}</p>
     <p>Altura: ${G.height}</p>
     <p>Peso: ${G.weight}</p>
@@ -704,7 +704,7 @@ export const wordH = () =>{
     d.innerHTML = `
     <h2>${H.name}</h2><br>
     <img src=${H.img} /><br>
-    <p>Nombre: ${H.name}</p>
+    <p>Numero: ${H.id}</p>
     <p>Tipo: ${H.type}</p>
     <p>Altura: ${H.height}</p>
     <p>Peso: ${H.weight}</p>
@@ -731,7 +731,7 @@ export const wordI = () =>{
     d.innerHTML = `
     <h2>${I.name}</h2><br>
     <img src=${I.img} /><br>
-    <p>Nombre: ${I.name}</p>
+    <p>Numero: ${I.id}</p>
     <p>Tipo: ${I.type}</p>
     <p>Altura: ${I.height}</p>
     <p>Peso: ${I.weight}</p>
@@ -758,7 +758,7 @@ export const wordJ = () =>{
     d.innerHTML = `
     <h2>${J.name}</h2><br>
     <img src=${J.img} /><br>
-    <p>Nombre: ${J.name}</p>
+    <p>Numero: ${J.id}</p>
     <p>Tipo: ${J.type}</p>
     <p>Altura: ${J.height}</p>
     <p>Peso: ${J.weight}</p>
@@ -785,7 +785,7 @@ export const wordK = () =>{
     d.innerHTML = `
     <h2>${K.name}</h2><br>
     <img src=${K.img} /><br>
-    <p>Nombre: ${K.name}</p>
+    <p>Numero: ${K.id}</p>
     <p>Tipo: ${K.type}</p>
     <p>Altura: ${K.height}</p>
     <p>Peso: ${K.weight}</p>
@@ -812,7 +812,7 @@ export const wordL = () =>{
     d.innerHTML = `
     <h2>${L.name}</h2><br>
     <img src=${L.img} /><br>
-    <p>Nombre: ${L.name}</p>
+    <p>Numero: ${L.id}</p>
     <p>Tipo: ${L.type}</p>
     <p>Altura: ${L.height}</p>
     <p>Peso: ${L.weight}</p>
@@ -839,7 +839,7 @@ export const wordM = () =>{
     d.innerHTML = `
     <h2>${M.name}</h2><br>
     <img src=${M.img} /><br>
-    <p>Nombre: ${M.name}</p>
+    <p>Numero: ${M.id}</p>
     <p>Tipo: ${M.type}</p>
     <p>Altura: ${M.height}</p>
     <p>Peso: ${M.weight}</p>
@@ -866,7 +866,7 @@ export const wordN = () =>{
     d.innerHTML = `
     <h2>${N.name}</h2><br>
     <img src=${N.img} /><br>
-    <p>Nombre: ${N.name}</p>
+    <p>Numero: ${N.id}</p>
     <p>Tipo: ${N.type}</p>
     <p>Altura: ${N.height}</p>
     <p>Peso: ${N.weight}</p>
@@ -893,7 +893,7 @@ export const wordO = () =>{
     d.innerHTML = `
     <h2>${O.name}</h2><br>
     <img src=${O.img} /><br>
-    <p>Nombre: ${O.name}</p>
+    <p>Numero: ${O.id}</p>
     <p>Tipo: ${O.type}</p>
     <p>Altura: ${O.height}</p>
     <p>Peso: ${O.weight}</p>
@@ -920,7 +920,7 @@ export const wordP = () =>{
     d.innerHTML = `
     <h2>${P.name}</h2><br>
     <img src=${P.img} /><br>
-    <p>Nombre: ${P.name}</p>
+    <p>Numero: ${P.id}</p>
     <p>Tipo: ${P.type}</p>
     <p>Altura: ${P.height}</p>
     <p>Peso: ${P.weight}</p>
@@ -947,7 +947,7 @@ export const wordR = () =>{
     d.innerHTML = `
     <h2>${R.name}</h2><br>
     <img src=${R.img} /><br>
-    <p>Nombre: ${R.name}</p>
+    <p>Numero: ${R.id}</p>
     <p>Tipo: ${R.type}</p>
     <p>Altura: ${R.height}</p>
     <p>Peso: ${R.weight}</p>
@@ -974,7 +974,7 @@ export const wordS = () =>{
     d.innerHTML = `
     <h2>${S.name}</h2><br>
     <img src=${S.img} /><br>
-    <p>Nombre: ${S.name}</p>
+    <p>Numero: ${S.id}</p>
     <p>Tipo: ${S.type}</p>
     <p>Altura: ${S.height}</p>
     <p>Peso: ${S.weight}</p>
@@ -1001,7 +1001,7 @@ export const wordT = () =>{
     d.innerHTML = `
     <h2>${T.name}</h2><br>
     <img src=${T.img} /><br>
-    <p>Nombre: ${T.name}</p>
+    <p>Numero: ${T.id}</p>
     <p>Tipo: ${T.type}</p>
     <p>Altura: ${T.height}</p>
     <p>Peso: ${T.weight}</p>
@@ -1028,7 +1028,7 @@ export const wordV = () =>{
     d.innerHTML = `
     <h2>${V.name}</h2><br>
     <img src=${V.img} /><br>
-    <p>Nombre: ${V.name}</p>
+    <p>Numero: ${V.id}</p>
     <p>Tipo: ${V.type}</p>
     <p>Altura: ${V.height}</p>
     <p>Peso: ${V.weight}</p>
@@ -1055,7 +1055,7 @@ export const wordW = () =>{
     d.innerHTML = `
     <h2>${W.name}</h2><br>
     <img src=${W.img} /><br>
-    <p>Nombre: ${W.name}</p>
+    <p>Numero: ${W.id}</p>
     <p>Tipo: ${W.type}</p>
     <p>Altura: ${W.height}</p>
     <p>Peso: ${W.weight}</p>
@@ -1082,7 +1082,7 @@ export const wordZ = () =>{
     d.innerHTML = `
     <h2>${Z.name}</h2><br>
     <img src=${Z.img} /><br>
-    <p>Nombre: ${Z.name}</p>
+    <p>Numero: ${Z.id}</p>
     <p>Tipo: ${Z.type}</p>
     <p>Altura: ${Z.height}</p>
     <p>Peso: ${Z.weight}</p>
@@ -1099,7 +1099,9 @@ export const wordZ = () =>{
   });
 }
 
-export const buscador = () =>{ 
+////////////////////////////////Buscador/////////////////////7//////////////////
+
+export const buscador = () =>{
   const search = document.querySelector('.src');
   let f = search.value;
   let g = f[0].toUpperCase() + f.slice(1);
@@ -1112,7 +1114,7 @@ export const buscador = () =>{
      d.innerHTML = `
      <h2>${c.name}</h2><br>
      <img src=${c.img} /><br>
-     <p>Nombre: ${c.name}</p>
+    <p>Numero: ${c.id}</p>
      <p>Tipo: ${c.type}</p>
      <p>Altura: ${c.height}</p>
      <p>Peso: ${c.weight}</p>

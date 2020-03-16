@@ -303,6 +303,9 @@ function all22() {
   document.querySelector('#root').innerHTML="";
   wordZ()
 }
+
+/*********************************Buscador*************************************/
+
 let btn = document.querySelector('.btn')
 btn.addEventListener('click', filtrar);
 function filtrar(){

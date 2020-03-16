@@ -36,8 +36,12 @@ body{
 }
 
 #loader p{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
   text-align: center;
-  font-size: 30px;
+  font-size: 4vw;
   font-family: Pokemon;
   -webkit-text-fill-color: #fde007;
   -webkit-text-stroke: 2px;
@@ -214,13 +218,15 @@ body{
 /********************Search************************/
 .box{
   position: absolute;
-  width: 248px;
-  height: auto;
-  margin: 0px;
+  width: 400px;
+  height: 50px;
   margin-right: 92%;
   margin-left: 15%;
   overflow: hidden;
   transform: translateY(-50%, -50%);
+  display: flex;
+  align-items: center;
+
 }
 
 input.src{
@@ -231,22 +237,44 @@ input.src{
   color: #444;
   border: 3px solid #175E95;
   background: #175E95 url("img/Lupa.png") no-repeat 9px center;
-  width: 45px;/*tamaño del placeholder antes de la animacion*/
+  width: 50px;/*tamaño del placeholder antes de la animacion*/
   transition: all .5s;
   color: #fff;
+  font-family: Sitka;
 }
 
 input.src:hover{
-  width: 195px;/*tamaño del placeholder despues de la animacion*/
+  width: 200px;/*tamaño del placeholder despues de la animacion*/
   background-color: #0f002d;
   border-color: #0f002d;
   box-shadow: 0 0 5px #6dcff680;
+  font-family: Sitka;
 }
 
 input::placeholder{
   color: #fff;
   font-family: Sitka;
 }
+
+.btn{
+  text-align: center;
+  position: relative;
+  width: 80px;
+  height: 30px;
+  font-family: Sitka;
+  font-size: 12px;
+  border-radius: 15px;
+  background-color: #fde007;
+  border: 3px solid #4358b1;
+  shadow: 7px 5px 5px #110033;
+  cursor: pointer;
+}
+
+.btn:hover{
+box-shadow:1px 5px 10px lightgrey;
+transform:scale(1.1)
+}
+
 
 /******************Titulo Pokemon*****************/
 @font-face {
